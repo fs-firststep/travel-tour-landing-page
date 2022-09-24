@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "montserrat", sans-serif;
+    border: 3px solid red;
+}
+
+/* ###################### Basic Common CSS genearal use ###################################  */
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15rem;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ###################### Utility Classes ###################################  */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Heading  */
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.md-heaing {
+    font-size: 2.2rem;
+}
+
+/* color  */
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333;
+}
+
+.texr-gray {
+    color: #555;
+}
+
+/* Button  */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary {
+    background: #fff;
+    border-radius: 100px;
+}
+
+.btn-secondary {
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #fff;
+
+}
+
+.btn-primary:hover {
+    background: #ecb9b9;
+}
+
+.btn-secondary:hover {
+    background: #f5a8a8;
+}
+
+
+
+
+
+
+/* --------------------- Styling the Landing Page ----------------------------- */
+.header {
+    width: 100%;
+    min-height: 98vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url(./img/header-image.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* Navbar of Landing page */
+.navbar {
+    /* border: 2px solid white; */
+    padding: 1rem;
+}
+
+.header .navbar .logo {
+    float: left;
+}
+
+.header .navbar .nav-items {
+    float: right;
+    margin-top: 1rem;
+
+}
+
+.header .navbar .nav-item {
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    padding-bottom: 0.3rem;
+    color: #f4f4f4;
+}
+
+.navbar a:visited {
+    color: #fff;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Styling the Content of Landing Page   */
+.header-content {
+    /* border: 2px solid white; */
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 500px;
+
+    
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.header-content p{
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 2rem;
+}
+  /* _______________________________________________________________________________________  */
+
+@media(max-width: 768px)
+{
+  html{
+    font-size: 50%;
+  }
+
+}
